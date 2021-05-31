@@ -1,0 +1,62 @@
+.toggle {
+    padding: 50px;
+}
+
+.toggle-cb {
+    visibility: hidden;
+}
+
+.toggle-inner {
+    position: absolute;
+    background: #ebebeb;
+    width: 140px;
+    height: 50px;
+    border: 2px solid silver;
+    border-radius: 30px;
+}
+
+.toggle-cb:checked + label .toggle-inner {
+    background: crimson;
+}
+
+.toggle-cb:not(:checked) + label .toggle-switch {
+    position: relative;
+    top: -5px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid silver;
+    border-radius: 50%;
+    background: white;
+}
+
+.toggle-cb:checked + label .toggle-switch {
+    position: relative;
+    top: -5px;
+    left: 100px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid silver;
+    border-radius: 50%;
+    background: white;
+}
+
+.toggle-cb:checked + label::after {
+    content: "Yes";
+    position: relative;
+    top: -51px;
+    left: 33px;
+    font-size: 30px;
+    color: white;
+    font-family: Arial;
+}
+
+.toggle-cb:not(:checked) + label::after {
+    content: "No";
+    position: relative;
+    top: -51px;
+    left: 70px;
+    font-size: 30px;
+    color: silver;
+    font-family: Arial;
+}

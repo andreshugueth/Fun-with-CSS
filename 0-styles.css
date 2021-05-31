@@ -1,0 +1,47 @@
+ul {
+    margin: 30px;
+}
+
+li ~ li {
+    margin-left: 30px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+    width: 180px;
+    height: 300px;
+    text-align: center;
+    padding-top: 15px;
+    background: #F7F7F7;
+    font-weight: bold;
+    font-size: 24px;;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-size: 300%;
+}
+
+.i-html {
+    background-image: url('./0-sprite.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.i-css {
+    background-image: url('./0-sprite.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.i-js {
+    background-image: url('./0-sprite.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
